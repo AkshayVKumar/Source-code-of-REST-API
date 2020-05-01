@@ -5,3 +5,4 @@ from django.contrib.admin import ModelAdmin
 class AdminUserProfile(ModelAdmin):
     list_display=('email','name','is_active','is_staff','is_superuser')
 admin.site.register(UserProfile,AdminUserProfile)
+admin.site.register(ProfileFeedItem)
